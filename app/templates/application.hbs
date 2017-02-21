@@ -1,5 +1,42 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav class="teal" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">SVG and Ember</a>
+  </div>
+</nav>
 
-{{outlet}}
+<div class="">
+  <div class="section">
+    {{outlet}}
+  </div>
+</div>
+
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Helpful Links</h5>
+        <p class="grey-text text-lighten-4">Here's some helpful references to parse through after this talk.</p>
+
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">MDN</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Shared Defs</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    Made by <strong>Nathan Batson</strong>
+    </div>
+  </div>
+</footer>

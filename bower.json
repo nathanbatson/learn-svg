@@ -1,5 +1,6 @@
 {
   "name": "svg-talk",
   "dependencies": {
+    "codemirror": "~5.15.0"
   }
 }
