@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
     classNames: ['svg-editor'],
     title: "<SVG>",
+    svgTitle: "Output",
     width: 500,
     height: 330,
     viewBox: null,

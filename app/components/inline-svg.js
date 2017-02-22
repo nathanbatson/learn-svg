@@ -6,5 +6,10 @@ export default Ember.Component.extend({
     viewBox: null,
     paths: '',
     defs: '',
-    preserveAspectRatio: null
+    preserveAspectRatio: null,
+    actions: {
+        error(){
+            console.log('inline-svg error');
+        }
+    }
 });

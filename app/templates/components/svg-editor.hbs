@@ -26,13 +26,20 @@
                         {{input type="text" placeholder="viewBox property" value=viewBox}}
                     </div>
                 </div>
+                <h6>preserveAspectRatio</h6>
+                <div class="row">
+                    <div class="col s12">
+                        {{input type="text" placeholder="preserve aspect ratio" value=preserveAspectRatio}}
+                    </div>
+                </div>
             {{/if}}
         {{/if}}
     </div>
     <div class="col s4">
-        <h5>Output</h5>
+        <h5>{{{svgTitle}}}</h5>
         <div class="svg-container">
-            {{inline-svg 
+            {{inline-svg
+                preserveAspectRatio=preserveAspectRatio
                 class="demo-svg"
                 width=width 
                 height=height 
