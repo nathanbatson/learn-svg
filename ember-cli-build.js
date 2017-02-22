@@ -5,7 +5,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     codemirror: {
-      modes: ['xml'],
+      modes: ['xml', 'css'],
       themes: ['solarized']
     }
     // Add options here

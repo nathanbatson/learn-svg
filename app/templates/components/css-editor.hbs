@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col s8">
+
+    {{ivy-codemirror 
+        value=styles
+        valueUpdated=(action (mut styles))
+        options=(hash theme="solarized" lineNumbers=true mode="css")
+        classNames="small-editor"
+    }}
+
+    <style>
+        {{{styles}}}
+    </style>
+
+    </div>
+</div>

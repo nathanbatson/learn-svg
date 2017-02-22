@@ -19,6 +19,10 @@ main {
     height: 350px;
 }
 
+.small-editor .CodeMirror, .CodeMirror.small-editor {
+    height: 150px;
+}
+
 #logo-container {
     font-size: 25px;
 }
@@ -34,16 +38,6 @@ main {
     width: calc(100% - 40px);
 }
 
-// svg styling
-.custom-fill{
-    fill: #009688;
-    stroke: #006544;
-}
-
 .inherit-fill{
     fill: inherit;
-}
-
-.small-editor .CodeMirror {
-    height: 150px;
 }
