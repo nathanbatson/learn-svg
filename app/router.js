@@ -7,6 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+    this.route('shapes');
+    this.route('css');
+    this.route('viewbox');
+    this.route('defs');
+    this.route('shared-defs');
+    this.route('hbs');
 });
 
 export default Router;

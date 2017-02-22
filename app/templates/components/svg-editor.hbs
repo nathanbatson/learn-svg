@@ -1,29 +1,33 @@
 <div class="row">
     <div class="col s8">
-        <h5>&lt;SVG&gt; Elements</h5>
+        <h5>{{title}}</h5>
         {{ivy-codemirror 
             value=paths 
             valueUpdated=(action (mut paths))
             options=(hash theme="solarized" lineNumbers=true mode="xml")
         }}
-        <h5>&lt;SVG&gt; Attributes</h5>
-        <h6>Viewport</h6>
-        <div class="row">
-            <div class="col s6">
-                <label>Width</label>
-                {{input type="text" placeholder="width property" value=width}}
+        {{#if advanced}}
+            <h5>&lt;SVG&gt; Attributes</h5>
+            <h6>Viewport</h6>
+            <div class="row">
+                <div class="col s6">
+                    <label>Width</label>
+                    {{input type="text" placeholder="width property" value=width}}
+                </div>
+                <div class="col s6">
+                    <label>Height</label>
+                    {{input type="text" placeholder="height property" value=height}}
+                </div>
             </div>
-            <div class="col s6">
-                <label>Height</label>
-                {{input type="text" placeholder="height property" value=height}}
-            </div>
-        </div>
-        <h6>viewBox</h6>
-        <div class="row">
-            <div class="col s12">
-                {{input type="text" placeholder="viewBox property" value=viewBox}}
-            </div>
-        </div>
+            {{#if extra}}
+                <h6>viewBox</h6>
+                <div class="row">
+                    <div class="col s12">
+                        {{input type="text" placeholder="viewBox property" value=viewBox}}
+                    </div>
+                </div>
+            {{/if}}
+        {{/if}}
     </div>
     <div class="col s4">
         <h5>Output</h5>

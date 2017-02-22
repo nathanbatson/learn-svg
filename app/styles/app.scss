@@ -1,5 +1,36 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body > .ember-view {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#logo-container {
+    font-size: 25px;
+}
+
 .demo-svg svg{
     border: 3px solid #009688;
     max-width: 100%;
     height: auto;
+}
+
+.container {
+    max-width: 1400px;
+    width: calc(100% - 40px);
+}
+
+// svg styling
+.red-fill{
+    fill: #ff0000;
+    stroke: #cc0000;
 }
